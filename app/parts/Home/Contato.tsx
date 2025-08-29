@@ -8,9 +8,9 @@ import HeaderTitle from "../estrutura/headerTitle";
 export default function Contato() {
   return (
     <div className="bg-white relative">
-      <HeaderTitle title="ENTRE EM CONTATO" text="text-black" />
-      <section id="contato" className="pb-8 md:pb-16">
-        <div className="container mx-auto px-4" id="contato">
+      <section id="contato" className="">
+        <div className="container mx-auto px-4 py-8 md:py-10" id="contato">
+          <HeaderTitle title="ENTRE EM CONTATO" text="text-black" />
           <div className="md:flex  gap-x-8 text-black">
             <div className="w-full md:w-1/2">
               <div className="bg-white p-8">

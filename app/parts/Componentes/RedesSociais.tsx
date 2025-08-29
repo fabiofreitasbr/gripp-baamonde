@@ -1,5 +1,5 @@
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import redesLista from "../dados/contentRedes";
+import redesLista from "../dados/contentRedesBanner";
 import Link from "next/link";
 
 interface PropsRedesSociais {
@@ -22,7 +22,7 @@ export default function RedesSociais(props: PropsRedesSociais) {
           <Link href={singleLista.link} target="_blank" >
             <FontAwesomeIcon
               icon={singleLista.icon}
-              className={`  w-6 h-6 md:w-8 md:h-8 ${hoverColor} ${bgColor} `}
+              className={`  md:w-4 md:h-4 lg:w-6 lg:h-6  ${hoverColor} ${bgColor} `}
             />
           </Link>
         </div>

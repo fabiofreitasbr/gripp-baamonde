@@ -30,7 +30,7 @@ export default function Menu() {
         }
       >
         <div className="container mx-auto px-4">
-          <div className="flex flex-row justify-between items-center h-auto">
+          <div className="flex flex-row gap-10 xl:gap-0 justify-between items-center h-auto">
             <div className="logo z-20 ">
               <Link href="/">
                 <Image
@@ -43,7 +43,7 @@ export default function Menu() {
               </Link>
             </div>
             <nav className=" flex items-center gap-x-4 lg:gap-x-10  ">
-              <ul className="hidden md:flex gap-x-[2rem]  lg:gap-x-[2.5rem] xl:gap-x-10 2xl:gap-x-[3rem] text-xs md:text-sm lg:text-base xl:text-lg 2xl:text-xl font-medium items-center uppercase">
+              <ul className="hidden md:flex gap-x-5 lg:gap-x-[2.5rem] xl:gap-x-10 2xl:gap-x-[3rem]  md:text-xs lg:text-base xl:text-lg  font-medium items-center uppercase">
                 <li>
                   <Link href="/" className="text-white hover:text-amber-500">
                     HOME
@@ -76,12 +76,12 @@ export default function Menu() {
 
                 <li>
                   <Link href={ContentLinks.whatsapp} target="_blank">
-                    <button className="bg-amber-500 flex flex-row gap-2  place-items-center rounded-full  py-2 px-8 md:px-6 lg:py-2 lg:px-12   text-black text-base md:text-sm lg:text-lg uppercase font-light">
+                    <button className="bg-amber-500 flex flex-row gap-2  place-items-center rounded-full   py-2  px-8   text-black text-xs md:text-base lg:text-base xl:text-xl  font-light">
                       <FontAwesomeIcon
                         icon={faHeadphones}
-                        className="  md:h-6 md:w-6"
+                        className="  w-4 h-4 lg:w-5 lg:h-5 xl:w-6 xl:h-6"
                       />
-                      ENTRE EM CONTATO
+                      Entre em contato
                     </button>
                   </Link>
                 </li>
@@ -101,7 +101,7 @@ export default function Menu() {
       </header>
       <nav
         className={
-          "block md:hidden z-40 w-full h-screen bg-cyan-800  fixed top-2 px-6 pt-28 transition-all duration-300 ease-in-out " +
+          "block md:hidden z-40 w-full h-screen bg-trueGray-800  fixed  px-6 pt-28 transition-all duration-300 ease-in-out " +
           menuNavigation
         }
       >

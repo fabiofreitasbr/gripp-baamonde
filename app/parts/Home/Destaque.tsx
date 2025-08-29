@@ -3,7 +3,7 @@ import { serviceList } from "@/app/parts/dados/contentDestaque";
 
 export default function QuemSomos() {
   return (
-    <div className="bg-gray-100  py-[8rem] -mb-10  ">
+    <div className="bg-gray-100 py-10 lg:py-16 lg:-mb-6 mb-0 xl:mb-0 2xl:py-[8rem]  ">
       <div className="container mx-auto px-4 " id="quemsomos">
         <div className="grid grid-col-1 gap-4 lg:gap-8 place-items-center w-full  ">
           <div className="w-full  grid grid-cols-2 md:grid-cols-4    ">
@@ -16,7 +16,7 @@ export default function QuemSomos() {
                   <Image
                     src={serviceSingle.img}
                     alt=""
-                    className="w-[9rem] sm:w-[10rem] md:w-auto object-contain rounded-lg"
+                    className="w-[2rem] md:w-auto object-contain rounded-lg"
                   />
                   <div className="  text-black  flex flex-col text-center items-center gap-4 md:px-6 lg:px-8 xl:px-12 ">
                     <h4 className=" text-[0.5rem] md:text-[0.8rem] lg:text-sm xl:text-xl font-semibold leading-tight ">

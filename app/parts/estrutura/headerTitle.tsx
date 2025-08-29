@@ -9,7 +9,7 @@ export default function HeaderTitle(props: PropsHeaderTitle) {
   const classText = props.text ? props.text : "";
   return (
     <div
-      className={` ${classBg} bg-cover h-18 md:h-42 xl:h-48 2xl:h-64 flex items-center justify-center p-4 md:p-8 lg:p-10 `}
+      className={` ${classBg} bg-cover  flex items-center justify-center  `}
     >
       <div className="container mx-auto px-4 text-white text-center">
         <div

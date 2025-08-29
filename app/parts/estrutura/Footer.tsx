@@ -17,13 +17,13 @@ export default function Rodape() {
     <>
       <footer className="bg-trueGray-800 py-10 relative h-auto ">
         <div className="container mx-auto px-4  text-white ">
-          <div className="grid grid-cols-4  lg:gap-y-4  ">
-            <div className="flex flex-col md:col-span-1  gap-y-6 md:gap-y-10  lg:justify-start lg:items-start">
+          <div className="flex flex-col items-center md:items-start md:grid md:grid-cols-4 gap-4  ">
+            <div className="flex flex-col   gap-y-6 md:gap-y-10 items-center  md:items-start">
               <Image src={logoImg} alt="" className="" />
             </div>
             <div>
-              <h3 className="font-bold mb-4 text-xl lg:text-2xl ">Menu</h3>
-              <ul className="flex flex-col text-base font-medium 2xl:text-lg">
+              <h3 className="font-bold mb-4 text-sm lg:text-2xl  ">Menu</h3>
+              <ul className="flex flex-col text-xs font-medium 2xl:text-lg">
                 <li className="py-2">
                   <Link href="/" className="text-orange-200 hover:text-white">
                     Início
@@ -57,21 +57,22 @@ export default function Rodape() {
             </div>
             <div className=" col-span-1">
               <div>
-                <h3 className="font-bold mb-4 text-xl lg:text-2xl ">
+                <h3 className="font-bold mb-4 text-sm lg:text-2xl ">
                   Redes Sociais
                 </h3>
                 <RedesSociais
-                  classColor="text-orange-200 "
+                  classColor="text-orange-200  "
                   classBgColor=""
                   classHoverColor="hover:text-white"
                   className="flex md:flex-row-2 space-x-6 justify-center items-center lg:justify-start"
                 />
               </div>
             </div>
-            <div>
-              <h3 className="font-bold mb-4 text-xl lg:text-2xl ">Contato</h3>
-              <ul className="text-orange-200 flex flex-col items-start ">
-                <li className="text-base py-2">
+            <div className="flex text-center items-center md:text-start ">
+            <div className="">
+              <h3 className="font-bold mb-4 text-sm lg:text-2xl ">Contato</h3>
+              <ul className="text-orange-200 flex flex-col items-center md:items-start ">
+                <li className="text-xs md:text-base py-2">
                   <Link
                     href={ContentLinks.email}
                     target="_blank"
@@ -84,7 +85,7 @@ export default function Rodape() {
                     <div className="break-all">{ContentLinks.emailShow}</div>
                   </Link>
                 </li>
-                <li className="text-base py-2">
+                <li className="text-xs md:text-base py-2">
                   <Link
                     href={ContentLinks.whatsapp}
                     target="_blank"
@@ -98,6 +99,7 @@ export default function Rodape() {
                   </Link>
                 </li>
               </ul>
+            </div>
             </div>
           </div>
           <div className="my-4">
